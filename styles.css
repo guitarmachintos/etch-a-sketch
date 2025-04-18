@@ -9,12 +9,14 @@ body {
     display: flex;
     flex-direction: column;
     background-color: rgb(245, 245, 245);
+    min-width: 506px;
+    
 }
 
 header, footer {
     flex-basis: 70px;
     background-color: white;
-    min-width: 500px;
+    /* min-width: 500px; */
     flex-shrink: 0;
 }
 
@@ -32,9 +34,31 @@ main {
 }
 
 .gridMenus {
-    flex-basis: 100px;
-    background-color: aqua;
+    background-color: white;
+    flex-basis: 80px;
     margin-top: 50px;
+    width: 600px;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sliderWrapper {
+    display: flex;
+    gap: 10px;
+}
+
+#sliderValue {
+    color: blue;
+    /* margin-top: 2px; */
+}
+
+
+.menuItem {
+    flex-basis: 600px;
+    height: 100px;
+    background-color: aquamarine;
 }
 
 .gridContent {
@@ -42,7 +66,12 @@ main {
     background-color: aquamarine;
     margin-top: 30px;
     flex: 0 0 500px;
-    width: 500px;
+    min-width: 500px;
+    max-width: 500px;
     border: 3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
     box-shadow: 0px 0px 20px #888888;
 }
+
